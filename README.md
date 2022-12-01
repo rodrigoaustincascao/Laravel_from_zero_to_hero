@@ -8,6 +8,7 @@
 - Laravel 9
 - Nginx
 - Postgress
+- Laravel Sail
 
 ## Execução
 
@@ -16,14 +17,7 @@ Clonar o projeto
 git clone https://github.com/rodrigoaustincascao/Laravel_from_zero_to_hero.git
 ```
 
-Realizar o build da imagem docker
-```
-docker build -t racascao/laravel:1.1 .
-```
-
 Abrir o projeto via devcontainer no vscode.
 
-```
-php artisan serve --port=8080
-```
+
 

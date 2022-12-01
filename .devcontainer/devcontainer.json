@@ -1,15 +1,22 @@
+// https://aka.ms/devcontainer.json
 {
-    "name": "meu-app",
-    "service": "meu-app",
-    "workspaceFolder": "/var/www/app",
-    "dockerComposeFile": "../.docker/docker-compose.yml",
-    "remoteUser": "appuser",
-    "settings": {
-      "terminal.integrated.defaultProfile.linux": "zsh"
-    },
-
-    //Extensões do VSCODE instaladas dentro do container
-    "extensions": [
-		"bmewburn.vscode-intelephense-client"
-	]
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "laravel.test",
+	"workspaceFolder": "/var/www/html",
+	"settings": {},
+	"extensions": [
+		// "mikestead.dotenv",
+		// "amiralizadeh9480.laravel-extra-intellisense",
+		// "ryannaddy.laravel-artisan",
+		// "onecentlin.laravel5-snippets",
+		// "onecentlin.laravel-blade"
+	],
+	"remoteUser": "sail",
+	"postCreateCommand": "chown -R 1000:1000 /var/www/html"
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "shutdownAction": "none",
 }
