@@ -1,0 +1,9 @@
+docker build -t racascao/laravel:1.0 .
+
+docker images
+
+docker run -it racascao/laravel:1.0
+
+docker compose up
+
+docker compose exec meu-app bash
