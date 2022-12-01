@@ -1,0 +1,15 @@
+{
+    "name": "meu-app",
+    "service": "meu-app",
+    "workspaceFolder": "/var/www/app",
+    "dockerComposeFile": "../.docker/docker-compose.yml",
+    "remoteUser": "appuser",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+
+    //Extensões do VSCODE instaladas dentro do container
+    "extensions": [
+		"bmewburn.vscode-intelephense-client"
+	]
+}
