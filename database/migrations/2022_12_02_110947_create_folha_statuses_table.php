@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('folhas', function (Blueprint $table) {
+        Schema::create('folhas_status', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('tipo_id')->constrained('folhas_tipos');
-            $table->foreignId('status_id')->constrained('folhas_status');
             $table->string('nome');
-            $table->date('data_pagamento');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('folhas');
+        Schema::dropIfExists('folhas_status');
     }
 };

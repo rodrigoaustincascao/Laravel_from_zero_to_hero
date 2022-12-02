@@ -18,6 +18,3 @@ git clone https://github.com/rodrigoaustincascao/Laravel_from_zero_to_hero.git
 ```
 
 Abrir o projeto via devcontainer no vscode.
-
-
-

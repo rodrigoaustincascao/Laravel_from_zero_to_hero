@@ -12,4 +12,8 @@ class Folha extends Model
     public function tipo(){
         return $this->belongsTo(FolhaTipo::class);
     }
+
+    public function status(){
+        return $this->belongsTo(FolhaStatus::class);
+    }
 }
